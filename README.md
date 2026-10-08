@@ -42,11 +42,8 @@ python train_ssda.py --mode target_only
 # Evaluate the included checkpoints (default data: dataset/target/test)
 python test.py --model_path .\ARCADE\AFB.pth --output_dir .\outputs\ARCADE_AFB
 python test.py --model_path .\DCA1\AFB.pth --output_dir .\outputs\DCA1_AFB
-
-# Visualize source and target foreground/background feature distributions
-python visualize_pca_da.py --model_paths .\ARCADE\AFB.pth --stage_names ARCADE
 ```
 
-Training outputs are saved in `weight/` and `logs/`. Evaluation writes segmentation masks and metric CSV files; PCA writes plots and CSV files. Both included checkpoints are named `AFB.pth`, so use different `--output_dir` values to avoid overwriting results. Run each script with `--help` for more options.
+Training outputs are saved in `weight/` and `logs/`. Evaluation writes segmentation masks and metric CSV files. Both included checkpoints are named `AFB.pth`, so use different `--output_dir` values to avoid overwriting results. Run each script with `--help` for more options.
 
 The included .pth checkpoints are tracked with Git LFS; install Git LFS before cloning to download the full weights.
