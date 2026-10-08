@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Local data and generated results
+dataset/
+weight/
+logs/
+outputs/
+pca_results/
